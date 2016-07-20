@@ -40,7 +40,13 @@ function createClickableTabs(clickableTabsId){
 			if(tabContent.tab  && tabContent.content){
 				tabContent.tab.onclick = function(){
 					displayContent(this);
+					return false;
 				}
+				tabContent.tab.onfocus = function(){
+					displayContent(this);
+					return false;
+				}
+
 			}
 		}
 	}

@@ -32,9 +32,9 @@
 	<p>Where "test" is the name of the tabPrefix</p>
 
 	<ul>
-		<li id="test_tab_0">Tab One</li>
-		<li id="test_tab_1">Tab Two</li>
-		<li id="test_tab_2">Tab Three</li>
+		<li tabindex="1" id="test_tab_0">Tab One</li>
+		<li tabindex="2" id="test_tab_1">Tab Two</li>
+		<li tabindex="3" id="test_tab_2">Tab Three</li>
 	</ul>
 
 	<p id="test_content_0">Tab content one</p>
