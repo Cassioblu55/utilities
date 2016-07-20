@@ -1,4 +1,3 @@
-
 window.onload = function () {
 	displayErrorMessage();
 }
@@ -113,6 +112,3 @@ function displayErrorMessage(){
 	}
 
 }
-
-
-
