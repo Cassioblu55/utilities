@@ -13,7 +13,12 @@
 </header>
 
 <main>
-	<a href="examples/clickableTabs.php">Clickable Tab Creator</a>
+	<div>
+		<a href="examples/clickableTabs.php">Clickable Tab Creator</a>
+	</div>
+	<div>
+		<a href="examples/errorDisplay.php?error=This is an Error Message">Disaply error message</a>
+	</div>
 
 </main>
 
