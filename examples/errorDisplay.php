@@ -3,11 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Utilities Testing Sandbox</title>
+	<script src="../js/errorDisplay.js"></script>
 </head>
 <body>
-
-<?php include_once "../php/errorDisplay.php"; ?>
-
 
 <header role="banner">
 	<h1>Create Popup Error Message</h1>
@@ -15,7 +13,7 @@
 
 	<p>Include file and add "error=Message" to url param and display a popup message that will fade away. Alerting a user of error. For example incorrectly submiting a form with an error that only the server can find.</p>
 
-	<p>Can be used at {projectHome}/php/errorDisplay.php</p>
+	<p>Can be used at {projectHome}/js/errorDisplay.js</p>
 </header>
 
 
