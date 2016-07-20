@@ -1,16 +1,16 @@
 
-window.onload = function(){
+window.onload = function () {
 	displayErrorMessage();
 }
 
 function displayErrorMessage(){
-
 	var error_box_div;
 	var error_box_style;
+	var fade_out_error_box_style;
 	var errorMessage;
 
-	var error_box_name = "error-box";
-	var error_box_style_css = "."+error_box_name+"{" +
+	const ERROR_BOX_NAME = "error-box";
+	const ERROR_BOX_STYLE_CSS = "."+ERROR_BOX_NAME+"{" +
 		"margin:40%;" +
 		"padding:15px;" +
 		"white-space: nowrap;" +
@@ -36,6 +36,10 @@ function displayErrorMessage(){
 		"z-index: 100;" +
 		"}";
 
+	const FADE_OUT_ERROR_BOX_STYLE_CSS = ".fade-out-error-box{"+
+		"opacity: 0;"+
+		"}"
+
 	findErrorMessageFromUrl();
 	if(errorMessage){
 		generateErrorBox(errorMessage);
@@ -43,7 +47,9 @@ function displayErrorMessage(){
 
 	function findErrorMessageFromUrl(){
 		var em = getUrlParam("error");
-		errorMessage = decodeURI(em);
+		if(em){
+			errorMessage = decodeURI(em);
+		}
 	}
 
 	function getUrlParam(param){
@@ -53,42 +59,57 @@ function displayErrorMessage(){
 
 	function generateErrorBox(errorMessage){
 		createErrorBoxDiv();
-		createErrorStyle();
-		appendErrorStyleToDocumentHead();
-		error_box_div.className = error_box_name;
-		appendErrorDivToStartOfBody()
+		error_box_style = createStyleWithInnerHTML(ERROR_BOX_STYLE_CSS);
+		fade_out_error_box_style = createStyleWithInnerHTML(FADE_OUT_ERROR_BOX_STYLE_CSS);
+		appendStyleToHead(error_box_style);
+		appendStyleToHead(fade_out_error_box_style);
+		error_box_div.className = ERROR_BOX_NAME;
+		appendErrorDivToStartOfBody();
+		appendFadeOutStyleToErrorBox();
 	}
 
 	function createErrorBoxDiv(){
 		var div = document.createElement("div");
-		div.id = error_box_name;
+		div.id = ERROR_BOX_NAME;
 		div.innerHTML = errorMessage;
 		error_box_div = div;
 	}
 
-	function createErrorStyle(){
+	function createStyleWithInnerHTML(innerHTML){
 		var style = document.createElement('style');
 		style.type = 'text/css';
-		style.innerHTML = error_box_style_css;
-		error_box_style = style;
+		style.innerHTML = innerHTML;
+		return style;
 	}
 
-	function appendErrorStyleToDocumentHead(){
-		var documentHead = document.getElementsByTagName('head')[0];
-		if(!documentHead){
-			documentHead = document.createElement("HEAD");
-			document.appendChild(documentHead);
+	function appendStyleToHead(style){
+		var documentHead = getFirstElemementByTagOrCreateNew('head');
+		documentHead.appendChild(style);
+	}
+
+	function getFirstElemementByTagOrCreateNew(elementName){
+		var element = document.getElementsByTagName(elementName)[0];
+		if(!element){
+			element = document.createElement(elementName);
+			document.appendChild(element);
 		}
-		documentHead.appendChild(error_box_style);
+		return element;
 	}
 
 	function appendErrorDivToStartOfBody(){
-		var documentBody = document.getElementsByTagName('body')[0];
-		if(!documentBody){
-			documentBody = document.createElement("BODY");
-			document.appendChild(documentBody);
-		}
+		var documentBody = getFirstElemementByTagOrCreateNew('body');
 		documentBody.insertBefore(error_box_div, documentBody.childNodes[0]);
+	}
+
+	function addFadeOutStyleToDocumentHead(){
+		var documentHead = getFirstElemementByTagOrCreateNew('head');
+		documentHead.appendChild(fade_out_error_box_style);
+	}
+
+	function appendFadeOutStyleToErrorBox(){
+		setTimeout(function () {
+			error_box_div.className = error_box_div.className.concat(" fade-out-error-box");
+		}, 0);
 	}
 
 }
