@@ -1,5 +1,3 @@
-//
-
 function createClickableTabs(clickableTabsId){
 
 	var tabsWithContent;
