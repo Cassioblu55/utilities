@@ -28,6 +28,9 @@
 
 	<h3>Example</h3>
 
+	<p>Created using: createClickableTabs("test")</p>
+	<p>Where "test" is the name of the tabPrefix</p>
+
 	<ul>
 		<li id="test_tab_0">Tab One</li>
 		<li id="test_tab_1">Tab Two</li>
