@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c06d8b6a-9308-4f59-82e1-ed993f069ca3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angularStandardUtilities.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/standardUtilities.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="utilities.iws" />
@@ -284,12 +282,20 @@
       <workItem from="1468966355368" duration="18063000" />
       <workItem from="1470029695675" duration="116000" />
       <workItem from="1470344490862" duration="595000" />
-      <workItem from="1470420139284" duration="2421000" />
+      <workItem from="1470420139284" duration="2474000" />
     </task>
+    <task id="LOCAL-00001" summary="Added standard utilities to be used by many other projects">
+      <created>1470423270008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1470423270008</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21195000" />
+    <option name="totallyTimeSpent" value="21248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="27" width="1236" height="769" extended-state="0" />
@@ -324,6 +330,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added standard utilities to be used by many other projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added standard utilities to be used by many other projects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
