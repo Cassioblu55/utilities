@@ -44,7 +44,7 @@
 </main>
 
 
-<script src="../js/clickableTabs.js"></script>
+<script src="../js/clickableTabs/ct_1_0_0.js"></script>
 
 <script type="text/javascript">
 	createClickableTabs("test");

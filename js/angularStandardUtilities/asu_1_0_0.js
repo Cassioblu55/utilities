@@ -27,7 +27,7 @@ app.controller("StandardUtilitiesController", ['$scope', "$http", "$window", fun
 	}
 
 	$scope.redirectToIndex = function(){
-		$window.location.href ="index.php";
+		$window.location.href ="../../index.php";
 	}
 
 	$scope.setFromGet = function(get, setFunct, runOnFailed){

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Utilities Testing Sandbox</title>
-	<script src="../js/errorDisplay.js"></script>
+	<script src="../js/errorDisplay/ed_1_0_0.js"></script>
 </head>
 <body>
 
