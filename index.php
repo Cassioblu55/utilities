@@ -14,6 +14,11 @@
 	<div>
 		<a href="examples/clickableTabs.php">Clickable Tab Creator</a>
 	</div>
+
+	<div>
+		<a href="examples/showMessages.php?errorMessage=This is an Error Message&successMessage=This is a success message&defaultMessage=This is a default Message">Display server message</a>
+	</div>
+
 	<div>
 		<a href="examples/errorDisplay.php?error=This is an Error Message">Display error message</a>
 	</div>

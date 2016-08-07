@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c06d8b6a-9308-4f59-82e1-ed993f069ca3" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/angularStandardUtilities.js" afterPath="$PROJECT_DIR$/js/angularStandardUtilities/asu_1_0_0.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/clickableTabs.js" afterPath="$PROJECT_DIR$/js/clickableTabs/ct_1_0_0.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/errorDisplay.js" afterPath="$PROJECT_DIR$/js/errorDisplay/ed_1_0_0.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/standardUtilities.js" afterPath="$PROJECT_DIR$/js/standardUtilities/su_1_0_0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/showMessages.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/showServerMessages/ssm_1_0_0.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/clickableTabs.php" afterPath="$PROJECT_DIR$/examples/clickableTabs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/errorDisplay.php" afterPath="$PROJECT_DIR$/examples/errorDisplay.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="utilities.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,26 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="asu_1_0_0.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/angularStandardUtilities/asu_1_0_0.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ct_1_0_0.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/clickableTabs/ct_1_0_0.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="clickableTabs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/clickableTabs.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="errorDisplay.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="errorDisplay.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/errorDisplay.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,21 +49,29 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="su_1_0_0.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/standardUtilities/su_1_0_0.js">
+      <file leaf-file-name="showMessages.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/showMessages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc;n#getUrlValueByParam#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssm_1_0_0.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/showServerMessages/ssm_1_0_0.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,10 +98,12 @@
         <option value="$PROJECT_DIR$/php/errorDisplay.php" />
         <option value="$PROJECT_DIR$/examples/errorDisplay.php" />
         <option value="$PROJECT_DIR$/js/errorDisplay.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/standardUtilities.js" />
         <option value="$PROJECT_DIR$/js/angularStandardUtilities.js" />
         <option value="$PROJECT_DIR$/js/angularStandardUtilities/asu_1_0_0.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/examples/showMessages.php" />
+        <option value="$PROJECT_DIR$/js/showServerMessages/ssm_1_0_0.js" />
       </list>
     </option>
   </component>
@@ -195,6 +182,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="standardUtilities" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="showServerMessages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,7 +358,7 @@
       <workItem from="1468966355368" duration="18063000" />
       <workItem from="1470029695675" duration="116000" />
       <workItem from="1470344490862" duration="595000" />
-      <workItem from="1470420139284" duration="2860000" />
+      <workItem from="1470420139284" duration="12880000" />
     </task>
     <task id="LOCAL-00001" summary="Added standard utilities to be used by many other projects">
       <created>1470423270008</created>
@@ -376,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470423283413</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Redefined directory structure to support different versions of code">
+      <created>1470423726550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1470423726550</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21634000" />
+    <option name="totallyTimeSpent" value="31654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="27" width="1236" height="769" extended-state="0" />
@@ -418,7 +430,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added standard utilities to be used by many other projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added standard utilities to be used by many other projects" />
+    <MESSAGE value="Redefined directory structure to support different versions of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redefined directory structure to support different versions of code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -514,13 +527,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/errorDisplay.php" />
-    <entry file="file://$PROJECT_DIR$/js/errorDisplay/ed_1_0_0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/clickableTabs/ct_1_0_0.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -529,18 +535,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/js/errorDisplay/ed_1_0_0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="-941">
+          <caret line="13" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="113" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/standardUtilities/su_1_0_0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="1125">
+          <caret line="77" column="35" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="35" />
           <folding>
             <element signature="n#!!doc;n#getUrlValueByParam#0" expanded="false" />
           </folding>
@@ -555,6 +561,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/errorDisplay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/clickableTabs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -563,10 +585,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/errorDisplay.php">
+    <entry file="file://$PROJECT_DIR$/examples/showMessages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="435">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/showServerMessages/ssm_1_0_0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
           <folding />
         </state>
       </provider>
