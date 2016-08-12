@@ -13,7 +13,7 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get("defaultServerMessages", 'ShowMessagesController@index');
+Route::get("showMessages", 'ShowMessagesController@index');
 
 Route::get('defaultServerMessages/alt', 'ShowMessagesController@alt');
 
