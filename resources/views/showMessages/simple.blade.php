@@ -31,7 +31,7 @@
 
         <p>The only thing that is required is simpleMessage.urlParam. Everything else will go to default values.</p>
 
-        <a href="{{url('defaultServerMessages')}}">Back</a>
+        <a href="{{url('showMessages/alt?customMessage=This is a new message type with its own CSS')}}">Back</a>
     </main>
 @stop
 

@@ -15,9 +15,9 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get("showMessages", 'ShowMessagesController@index');
 
-Route::get('defaultServerMessages/alt', 'ShowMessagesController@alt');
+Route::get('showMessages/alt', 'ShowMessagesController@alt');
 
-Route::get('defaultServerMessages/simple', 'ShowMessagesController@simple');
+Route::get('showMessages/simple', 'ShowMessagesController@simple');
 
 Route::get('errorDisplay', 'ErrorDisplayController@index');
 

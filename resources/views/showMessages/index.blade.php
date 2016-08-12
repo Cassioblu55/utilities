@@ -32,11 +32,11 @@
 
     <main role="main">
 
-        <a href="{{url('defaultServerMessages')}}">Show error message</a>
+        <a href="{{url('showMessages?errorMessage=This is a error message.')}}">Show error message</a>
         <br>
         <a href="{{url('showMessages?successMessage=This is a success message.')}}">Show success message</a>
         <br>
-        <a href="{{url('defaultServerMessages')}}">Show default message</a>
+        <a href="{{url('showMessages?defaultMessage=This is a default message.')}}">Show default message</a>
         <br>
         <a href="{{url('showMessages?defaultMessage=This is a default message&errorMessage=This Is an error message.&successMessage=This is a success message.')}}">Show Multiple messages</a>
         <br>
