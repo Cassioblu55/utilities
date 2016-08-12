@@ -1,0 +1,373 @@
+[12-Aug-2016 02:24:24 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:24:24 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:24:24 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:24:24 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:24:39 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:24:39 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:24:39 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:24:39 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:27:05 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:27:05 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:27:05 America/Chicago] PHP Warning:  require(/home4/cassio/public_html/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/public_html/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:27:05 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/public_html/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/public_html/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:27:07 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:27:07 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:27:07 America/Chicago] PHP Warning:  require(/home4/cassio/public_html/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/public_html/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:27:07 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/public_html/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/public_html/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:31:48 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:31:48 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:31:48 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:31:48 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:32:31 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:32:31 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:32:31 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:32:31 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:33:49 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:33:49 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:33:49 America/Chicago] PHP Parse error:  syntax error, unexpected '$kernel' (T_VARIABLE) in /home4/cassio/laravel_apps/utilities/public/index.php on line 54
+[12-Aug-2016 02:34:04 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:34:04 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:34:04 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:34:04 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:37:52 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:37:52 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:37:52 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:37:52 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:40:58 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:40:58 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:40:58 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:40:58 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:41:01 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:41:01 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:41:01 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:41:01 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:50:49 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:50:49 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:50:49 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:50:49 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:50:57 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:50:57 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:50:57 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:50:57 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:51:10 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:51:10 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:51:10 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:51:10 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:51:11 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:51:11 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:51:11 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:51:11 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:52:06 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:52:06 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:52:06 America/Chicago] PHP Warning:  require(~/larvel_apps/utilities/bootstrap/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/public_html/index.php on line 22
+[12-Aug-2016 02:52:06 America/Chicago] PHP Fatal error:  require(): Failed opening required '~/larvel_apps/utilities/bootstrap/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/public_html/index.php on line 22
+[12-Aug-2016 02:53:48 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:53:48 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:53:48 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:53:48 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:55:01 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:55:01 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:55:01 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:55:01 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:56:53 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:56:53 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:56:53 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:56:53 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:57:03 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:57:03 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 02:57:03 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 02:57:03 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 03:09:16 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:09:16 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:09:16 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 03:09:16 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 03:09:43 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:09:43 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:09:43 America/Chicago] PHP Warning:  require(/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php): failed to open stream: No such file or directory in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 03:09:43 America/Chicago] PHP Fatal error:  require(): Failed opening required '/home4/cassio/laravel_apps/utilities/bootstrap/../../vendor/autoload.php' (include_path='.:/opt/php54/lib/php') in /home4/cassio/laravel_apps/utilities/bootstrap/autoload.php on line 17
+[12-Aug-2016 03:10:42 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:10:42 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:10:51 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:10:51 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:11:39 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:11:39 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:15:44 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:15:44 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:16:26 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:16:26 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:16:45 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:16:45 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:33 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:33 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:36 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:36 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:38 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:38 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:40 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:17:40 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:18:05 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
+[12-Aug-2016 03:18:05 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20121212
+These options need to match
+ in Unknown on line 0
