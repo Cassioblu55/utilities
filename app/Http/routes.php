@@ -13,12 +13,17 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get("showMessages", 'ShowMessagesController@index');
+Route::get("defaultServerMessages", 'ShowMessagesController@index');
 
-Route::get('showMessages/alt', 'ShowMessagesController@alt');
+Route::get('defaultServerMessages/alt', 'ShowMessagesController@alt');
 
-Route::get('showMessages/simple', 'ShowMessagesController@simple');
+Route::get('defaultServerMessages/simple', 'ShowMessagesController@simple');
 
 Route::get('errorDisplay', 'ErrorDisplayController@index');
 
 Route::get('clickableTabs', 'ClickableTabsController@index');
+
+//Admin show messages
+Route::get('defaultServerMessages', 'DefaultServerMessagesController@add@index');
+Route::get('defaultServerMessages/edit', 'DefaultServerMessagesController@edit');
+Route::get('defaultServerMessages/show', 'DefaultServerMessagesController@show');

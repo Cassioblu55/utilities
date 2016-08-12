@@ -19,7 +19,7 @@
 |
 */
 
-require '/home4/cassio/laravel_apps/utilities/bootstrap/autoload.php';
+require __DIR__.'/../bootstrap/autoload.php';
 
 /*
 |--------------------------------------------------------------------------

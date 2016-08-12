@@ -1,4 +1,4 @@
-@extends('app')
+@extends('templates.app')
 
 @section('styles')
     <style>
@@ -31,7 +31,7 @@
 
         <p>The only thing that is required is simpleMessage.urlParam. Everything else will go to default values.</p>
 
-        <a href="{{url('showMessages?errorMessage=This Is an error message.')}}">Back</a>
+        <a href="{{url('defaultServerMessages')}}">Back</a>
     </main>
 @stop
 

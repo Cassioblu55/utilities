@@ -1,4 +1,4 @@
-@extends('app')
+@extends('templates.app')
 
 @section('required_scripts')
     <script type="text/javascript" src="{{ URL::asset('js/clickableTabs/ct_1_0_0.js') }}"></script>

@@ -1,4 +1,4 @@
-@extends('app')
+@extends('templates.app')
 
 @section('styles')
     <style>
@@ -55,7 +55,7 @@
 
         <p>customMessage.urlParam is required, but customMessage.css will use the default message box css. And customMessage.messageBoxName will set the message box id but will default to customMessage.urlPram</p>
 
-        <p>See a simple version <a href="{{url('showMessages/simple?simpleMessage=This is a simple message')}}">here</a></p>
+        <p>See a simple version <a href="{{url('defaultServerMessages')}}">here</a></p>
 
         <h3>Note</h3>
 
