@@ -9,11 +9,11 @@
 
         <main>
             <div>
-                <a href="clickableTabs/">Clickable Tab Creator</a>
+                <a href="clickableTabs">Clickable Tab Creator</a>
             </div>
 
             <div>
-                <a href="/showMessages?errorMessage=This is an error message.">Display server message</a>
+                <a href="showMessages?errorMessage=This is an error message.">Display server message</a>
             </div>
 
             <div>
