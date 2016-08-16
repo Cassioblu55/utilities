@@ -9,7 +9,7 @@
 @section('controller', "DefaultServerMessagesIndexController")
 
 @section('additionalHeaderContent')
-    <a href="create" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
+    <a href="./create" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
     <form class="form-inline">
         <div class="form-group pull-right">
             <label for="previewMessage">Message:</label>
@@ -47,7 +47,7 @@
             ];
 
             $scope.refreshGridData = function(){
-                $scope.setFromGet("data", function(data){
+                $scope.setFromGet("./data", function(data){
                     $scope.gridModel.data = data;
                 });
             };
