@@ -1,31 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+@extends("templates.app")
 
-    <title>Document</title>
+@section('additional_head_content')
 
-    <script href="{{url("assets/js/jquery/dist/jquery.min.js")}}"></script>
-    <script href="{{url("assets/js/angular/angular.min.js")}}"></script>
-    <script href="{{url("assets/js/bootstrap/dist/js/bootstrap.min.js")}}"></script>
-    <script href="{{url("assets/js/angular-ui-grid/ui-grid.min.js")}}"></script>
-    @yield('required_scripts')
+    <script type="text/javascript" src="{{elixir('js/app.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/utils.js')}}"></script>
+    <script type="text/javascript" src="http://cassiohudson.com/utilities/js/standardUtilities/su_1_0_0.js"></script>
+    <script type="text/javascript" src="http://cassiohudson.com/utilities/js/angularStandardUtilities/asu_1_0_0.js"></script>
 
-    <link href="{{url("assets/js/bootstrap/dist/css/bootstrap.min.css")}}">
-    @yield('styles')
-
-</head>
-
-
-<body>
-@yield('content')
-</body>
-
-<footer>
-    @yield('footer')
-</footer>
-
-@yield('scripts')
-
-</html>
-
+    <link type="text/css" rel="stylesheet" href="{{elixir('css/app.css')}}">
+@stop

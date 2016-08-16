@@ -14,10 +14,10 @@ class DefaultServerMessages extends Migration
     {
         Schema::create('default_server_messages', function (Blueprint $table){
         	$table->increments('id');
-        	$table->string('urlParam');
+        	$table->string('url_param');
 	        $table->text('css');
-	        $table->string('messageBoxName');
-	        $table->string('cssClassName');
+	        $table->text('css_class_name');
+	        $table->string('message_box_name');
 	        $table->timestamps();
         });
     }

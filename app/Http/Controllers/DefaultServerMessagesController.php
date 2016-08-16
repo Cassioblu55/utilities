@@ -2,41 +2,66 @@
 
 namespace App\Http\Controllers;
 
+use App\DefaultServerMessage;
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
 
 class DefaultServerMessagesController extends Controller
 {
+
+
+
+	//parent $baseUrl = "defaultServerMessages";
+
     public function index(){
     	return view('defaultServerMessages.index');
     }
 
-	public function edit(){
-		return view('defaultServerMessages.edit');
+	public function edit(DefaultServerMessage $defaultServerMessage){
+		$headers = $this->getUpdateHeaders("/defaultServerMessages/".$defaultServerMessage->id."/update");
+		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 
-	public function show(){
-		return view('defaultServerMessages.show');
+	public function show(DefaultServerMessage $defaultServerMessage){
+		return view('defaultServerMessages.show', compact('defaultServerMessage'));
 	}
 
-	public function add($defaultMessage){
-
+	public function create(){
+		$defaultServerMessage = new DefaultServerMessage();
+		$headers = $this->getCreateHeaders('/defaultServerMessages/add');
+		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 
-	public function findById($id){
-
+	public function add(Request $request){
+		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
+		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
+		DefaultServerMessage::create($request->all());
+		return back();
 	}
 
-	public function update($defaultMessage){
-
+	public function update(Request $request, DefaultServerMessage $defaultServerMessage){
+		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
+		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
+		$defaultServerMessage -> update($request->all());
+		return back();
 	}
 
-	public function delete($defaultMessage){
-
+	public function delete(DefaultServerMessage $defaultServerMessage){
+		$defaultServerMessage->delete();
 	}
 
 	public function data(){
-
+		return DefaultServerMessage::all();
 	}
+
+	public function findById(DefaultServerMessage $defaultServerMessage){
+		return $defaultServerMessage;
+	}
+
+	public function cloneObject(DefaultServerMessage $defaultServerMessage){
+		$headers = $this->getCreateHeaders("/defaultServerMessages/add");
+		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
+	}
+
 }
+
+

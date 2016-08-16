@@ -20,6 +20,10 @@
                 <a href="errorDisplay?error=This is an Error Message">Display error message</a>
             </div>
 
+            <div>
+                <a href="/defaultServerMessages">Default Messages admin controls</a>
+            </div>
+
         </main>
     </div>
 </div>

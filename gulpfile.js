@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+elixir.config.publicPath = 'public_html';
 
 /*
  |--------------------------------------------------------------------------
@@ -12,5 +13,18 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.copy('node_modules/angular-ui-grid/ui-grid.ttf', 'public_html/build/css/');
+    mix.copy('node_modules/angular-ui-grid/ui-grid.woff', 'public_html/build/css/');
+
+    mix.browserify(['app.js'], 'public_html/js/app.js');
+
+    mix.styles(['node_modules/angular-ui-grid/ui-grid.css',
+        "node_modules/bootstrap/dist/css/bootstrap.css",
+        "node_modules/bootstrap/dist/css/bootstrap-theme.css"
+        ], 'public_html/css/app.css', './')
+
+    mix.version(['css/app.css', 'js/app.js']);
+
+
 });
+
