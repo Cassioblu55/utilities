@@ -9,7 +9,7 @@
 @section('controller', "DefaultServerMessagesIndexController")
 
 @section('additionalHeaderContent')
-    <a href="/defaultServerMessages/create" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
+    <a href="defaultServerMessages/create" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
     <form class="form-inline">
         <div class="form-group pull-right">
             <label for="previewMessage">Message:</label>
@@ -30,9 +30,9 @@
 
             $scope.gridModel = {enableFiltering: true, enableColumnResizing: true, showColumnFooter: true , enableSorting: false, showGridFooter: true, enableRowHeaderSelection: false, rowHeight: 42, enableColumnMenus: false};
 
-            const EDIT_BUTTON_HTML = getEditButton("/defaultServerMessages/<%row.entity.id%>/edit");
+            const EDIT_BUTTON_HTML = getEditButton("./<%row.entity.id%>/edit");
             const PREVIEW_BUTTON_HTML = getGridButton("grid.appScope.preview(row.entity)", "Preview", "btn-default")
-            const CLONE_BUTTON_HTML = getGridLink("/defaultServerMessages/<%row.entity.id%>/clone", "Clone", "btn-default");
+            const CLONE_BUTTON_HTML = getGridLink("./<%row.entity.id%>/clone", "Clone", "btn-default");
             const DELETE_BUTTON_HTML = getDeleteButton("grid.appScope.httpCalls.deleteObject(row.entity,row.entity.url_param);");
 
             $scope.gridModel.columnDefs = [
@@ -47,14 +47,14 @@
             ];
 
             $scope.refreshGridData = function(){
-                $scope.setFromGet("/defaultServerMessages/data", function(data){
+                $scope.setFromGet("defaultServerMessages/data", function(data){
                     $scope.gridModel.data = data;
                 });
             };
 
             $scope.refreshGridData();
 
-            $scope.httpCalls = $scope.httpCallsUtil("/defaultServerMessages", $scope.refreshGridData);
+            $scope.httpCalls = $scope.httpCallsUtil(".", $scope.refreshGridData);
 
             $scope.previewMessage = "This is a preview Message";
 

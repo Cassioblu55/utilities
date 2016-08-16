@@ -21,7 +21,7 @@
             </div>
 
             <div>
-                <a href="/defaultServerMessages">Default Messages admin controls</a>
+                <a href="defaultServerMessages">Default Messages admin controls</a>
             </div>
 
         </main>
