@@ -7,17 +7,12 @@ use Illuminate\Http\Request;
 
 class DefaultServerMessagesController extends Controller
 {
-
-
-
-	//parent $baseUrl = "defaultServerMessages";
-
     public function index(){
     	return view('defaultServerMessages.index');
     }
 
 	public function edit(DefaultServerMessage $defaultServerMessage){
-		$headers = $this->getUpdateHeaders("/defaultServerMessages/".$defaultServerMessage->id."/update");
+		$headers = $this->getUpdateHeaders("update");
 		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 
@@ -27,7 +22,7 @@ class DefaultServerMessagesController extends Controller
 
 	public function create(){
 		$defaultServerMessage = new DefaultServerMessage();
-		$headers = $this->getCreateHeaders('/defaultServerMessages/add');
+		$headers = $this->getCreateHeaders('add');
 		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 
@@ -58,7 +53,7 @@ class DefaultServerMessagesController extends Controller
 	}
 
 	public function cloneObject(DefaultServerMessage $defaultServerMessage){
-		$headers = $this->getCreateHeaders("/defaultServerMessages/add");
+		$headers = $this->getCreateHeaders("add");
 		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 

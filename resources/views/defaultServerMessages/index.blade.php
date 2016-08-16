@@ -9,7 +9,7 @@
 @section('controller', "DefaultServerMessagesIndexController")
 
 @section('additionalHeaderContent')
-    <a href="defaultServerMessages/create" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
+    <a href="create" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
     <form class="form-inline">
         <div class="form-group pull-right">
             <label for="previewMessage">Message:</label>
@@ -33,7 +33,7 @@
             const EDIT_BUTTON_HTML = getEditButton("./<%row.entity.id%>/edit");
             const PREVIEW_BUTTON_HTML = getGridButton("grid.appScope.preview(row.entity)", "Preview", "btn-default")
             const CLONE_BUTTON_HTML = getGridLink("./<%row.entity.id%>/clone", "Clone", "btn-default");
-            const DELETE_BUTTON_HTML = getDeleteButton("grid.appScope.httpCalls.deleteObject(row.entity,row.entity.url_param);");
+            const DELETE_BUTTON_HTML = getDeleteButton("grid.appScope.httpCalls.deleteObjectFromGrid(row.entity,row.entity.url_param);");
 
             $scope.gridModel.columnDefs = [
                 {field: 'edit', enableFiltering: false, width: 52, cellTemplate: EDIT_BUTTON_HTML},
@@ -47,7 +47,7 @@
             ];
 
             $scope.refreshGridData = function(){
-                $scope.setFromGet("defaultServerMessages/data", function(data){
+                $scope.setFromGet("data", function(data){
                     $scope.gridModel.data = data;
                 });
             };

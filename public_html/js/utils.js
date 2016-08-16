@@ -28,18 +28,18 @@ app.controller("UtilsController", ['$scope', "$http","$controller", function($sc
 
 	$scope.httpCallsUtil = function(baseUrl, defaultCallback){
 		var that = {};
-		function deleteObject(objectToDelete, confirmName, callback){
+		function deleteObjectFromGrid(objectToDelete, confirmName, callback){
 			callback = callback || defaultCallback;
 			if(window.confirm("Are you sure you want to delete "+confirmName+"?")){
 				var url = createRequestUrlWithObject(objectToDelete, "delete");
 				$http.delete(url).then(function(response){
 					callback();
 				}, function errorCallback(){
-					runOnFailed("deleteObject");
+					runOnFailed("deleteObjectFromGrid");
 				});
 			}
 		}
-		that.deleteObject = deleteObject;
+		that.deleteObjectFromGrid = deleteObjectFromGrid;
 
 		function createRequestUrlWithObject(object, url){
 			return createUrlWithId(object.id, url);
@@ -55,7 +55,6 @@ app.controller("UtilsController", ['$scope', "$http","$controller", function($sc
 
 		function getDataOnEdit(requiredId, url, setFunct){
 			if(requiredIdPresent(requiredId)){
-				url = createUrlWithId(requiredId, url);
 				$http.get(url).then(function(response){
 					setFunct(response.data);
 				}, function errorCallback(response){
