@@ -20,7 +20,8 @@
     "autoload": {
         "classmap": [
             "database",
-            "app/Services/ProjectRouteService.php"
+            "app/Services/ProjectRouteService.php",
+            "app/Services/RoutingService.php"
         ],
         "psr-4": {
             "App\\": "app/"
