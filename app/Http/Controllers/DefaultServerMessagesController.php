@@ -8,39 +8,41 @@ use ProjectRoute;
 
 class DefaultServerMessagesController extends Controller
 {
+	const CONTROLLER_NAMESPACE = "defaultServerMessages";
+
     public function index(){
-    	return view('defaultServerMessages.index');
+    	return view(self::CONTROLLER_NAMESPACE.".index");
     }
 
 	public function edit(DefaultServerMessage $defaultServerMessage){
-		$postLocation = ProjectRoute::makeRoute("defaultServerMessage/$defaultServerMessage->id/update");
+		$postLocation = ProjectRoute::makeRoute(self::CONTROLLER_NAMESPACE."/$defaultServerMessage->id/update");
 		$headers = $this->getUpdateHeaders($postLocation);
-		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
+		return view(self::CONTROLLER_NAMESPACE.".edit", compact('defaultServerMessage', 'headers'));
 	}
 
 	public function show(DefaultServerMessage $defaultServerMessage){
-		return view('defaultServerMessages.show', compact('defaultServerMessage'));
+		return view(self::CONTROLLER_NAMESPACE.".show", compact('defaultServerMessage'));
 	}
 
 	public function create(){
 		$defaultServerMessage = new DefaultServerMessage();
-		$postLocation = ProjectRoute::makeRoute("defaultServerMessage/add");
+		$postLocation = ProjectRoute::makeRoute(self::CONTROLLER_NAMESPACE."/add");
 		$headers = $this->getCreateHeaders($postLocation);
-		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
+		return view(self::CONTROLLER_NAMESPACE.".edit", compact('defaultServerMessage', 'headers'));
 	}
 
 	public function add(Request $request){
 		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
 		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
 		DefaultServerMessage::create($request->all());
-		return back();
+		return redirect()->action("DefaultServerMessagesController@index", ["successMessage" => "Record Added Successfully"]);
 	}
 
 	public function update(Request $request, DefaultServerMessage $defaultServerMessage){
 		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
 		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
 		$defaultServerMessage -> update($request->all());
-		return back();
+		return redirect()->action("DefaultServerMessagesController@index", ["successMessage" => "Record Updated Successfully"]);
 	}
 
 	public function delete(DefaultServerMessage $defaultServerMessage){
@@ -56,9 +58,9 @@ class DefaultServerMessagesController extends Controller
 	}
 
 	public function cloneObject(DefaultServerMessage $defaultServerMessage){
-		$postLocation = ProjectRoute::makeRoute("defaultServerMessage/add");
+		$postLocation = ProjectRoute::makeRoute(self::CONTROLLER_NAMESPACE."/add");
 		$headers = $this->getCreateHeaders($postLocation);
-		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
+		return view(self::CONTROLLER_NAMESPACE.".edit", compact('defaultServerMessage', 'headers'));
 	}
 
 }

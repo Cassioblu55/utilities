@@ -12,7 +12,6 @@
                         <div class="panel-heading">
                             <h1 class="panel-title">@yield('form_title')</h1>
                         </div>
-
                         <div class="panel-body">
                             @yield('form_body')
                         </div>

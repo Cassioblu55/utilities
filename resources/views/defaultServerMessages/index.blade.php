@@ -61,7 +61,7 @@
 
             $scope.refreshGridData();
 
-            $scope.httpCalls = $scope.httpCallsUtil(".", $scope.refreshGridData);
+            $scope.httpCalls = $scope.httpCallsUtil("{{ProjectRoute::makeRoute("defaultServerMessages")}}", $scope.refreshGridData);
 
             $scope.previewMessage = "This is a preview Message";
 
