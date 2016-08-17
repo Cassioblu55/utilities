@@ -47,7 +47,7 @@ function displayErrorMessage(){
 	function findErrorMessageFromUrl(){
 		var em = getUrlParam("error");
 		if(em){
-			errorMessage = decodeURI(em);
+			errorMessage = decodeURIComponent(em.replace(/\+/gm,"%20"));
 		}
 	}
 

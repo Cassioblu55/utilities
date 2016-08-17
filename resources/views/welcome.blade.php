@@ -9,19 +9,19 @@
 
         <main>
             <div>
-                <a href="clickableTabs">Clickable Tab Creator</a>
+                <a href="{{ProjectRoute::makeRoute("clickableTabs")}}">Clickable Tab Creator</a>
             </div>
 
             <div>
-                <a href="showMessages?errorMessage=This is an error message.">Display server message</a>
+                <a href="{{ProjectRoute::makeRoute("showMessages?errorMessage=This is an error message.")}}">Display server message</a>
             </div>
 
             <div>
-                <a href="errorDisplay?error=This is an Error Message">Display error message</a>
+                <a href="{{ProjectRoute::makeRoute("errorDisplay?error=This is an Error Message")}}">Display error message</a>
             </div>
 
             <div>
-                <a href="defaultServerMessages">Default Messages admin controls</a>
+                <a href="{{ProjectRoute::makeRoute("defaultServerMessages")}}">Default Messages admin controls</a>
             </div>
 
         </main>
