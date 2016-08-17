@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\DefaultServerMessage;
 use Illuminate\Http\Request;
+use ProjectRoute;
 
 class DefaultServerMessagesController extends Controller
 {
@@ -12,7 +13,8 @@ class DefaultServerMessagesController extends Controller
     }
 
 	public function edit(DefaultServerMessage $defaultServerMessage){
-		$headers = $this->getUpdateHeaders("update");
+		$postLocation = ProjectRoute::makeRoute("defaultServerMessage/$defaultServerMessage->id/update");
+		$headers = $this->getUpdateHeaders($postLocation);
 		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 
@@ -22,7 +24,8 @@ class DefaultServerMessagesController extends Controller
 
 	public function create(){
 		$defaultServerMessage = new DefaultServerMessage();
-		$headers = $this->getCreateHeaders('add');
+		$postLocation = ProjectRoute::makeRoute("defaultServerMessage/add");
+		$headers = $this->getCreateHeaders($postLocation);
 		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 
@@ -53,7 +56,8 @@ class DefaultServerMessagesController extends Controller
 	}
 
 	public function cloneObject(DefaultServerMessage $defaultServerMessage){
-		$headers = $this->getCreateHeaders("add");
+		$postLocation = ProjectRoute::makeRoute("defaultServerMessage/add");
+		$headers = $this->getCreateHeaders($postLocation);
 		return view('defaultServerMessages.edit', compact('defaultServerMessage', 'headers'));
 	}
 

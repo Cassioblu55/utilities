@@ -9,7 +9,7 @@
 @section('controller', "DefaultServerMessagesIndexController")
 
 @section('additionalHeaderContent')
-    <a href="./create" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
+    <a href="{{ProjectRoute::makeRoute("defaultServerMessages/create")}}" style="margin-left: 10px" class="btn btn-primary pull-right">Add</a>
     <form class="form-inline">
         <div class="form-group pull-right">
             <label for="previewMessage">Message:</label>
@@ -30,9 +30,14 @@
 
             $scope.gridModel = {enableFiltering: true, enableColumnResizing: true, showColumnFooter: true , enableSorting: false, showGridFooter: true, enableRowHeaderSelection: false, rowHeight: 42, enableColumnMenus: false};
 
-            const EDIT_BUTTON_HTML = getEditButton("./<%row.entity.id%>/edit");
+            const EDIT_LINK_URL = "{{ProjectRoute::makeRoute("defaultServerMessages/<%row.entity.id%>/edit")}}";
+            const EDIT_BUTTON_HTML = getEditButton(EDIT_LINK_URL);
+
             const PREVIEW_BUTTON_HTML = getGridButton("grid.appScope.preview(row.entity)", "Preview", "btn-default")
-            const CLONE_BUTTON_HTML = getGridLink("./<%row.entity.id%>/clone", "Clone", "btn-default");
+
+            const CLONE_LINK_URL = "{{ProjectRoute::makeRoute("defaultServerMessages/<%row.entity.id%>/clone")}}";
+            const CLONE_BUTTON_HTML = getGridLink(CLONE_LINK_URL, "Clone", "btn-default");
+
             const DELETE_BUTTON_HTML = getDeleteButton("grid.appScope.httpCalls.deleteObjectFromGrid(row.entity,row.entity.url_param);");
 
             $scope.gridModel.columnDefs = [
@@ -46,8 +51,10 @@
                 {field: 'delete',  enableFiltering: false, width: 67,  cellTemplate: DELETE_BUTTON_HTML}
             ];
 
+            const GRID_DATA_URL = "{{ProjectRoute::makeRoute("defaultServerMessages/data")}}";
+
             $scope.refreshGridData = function(){
-                $scope.setFromGet("./data", function(data){
+                $scope.setFromGet(GRID_DATA_URL, function(data){
                     $scope.gridModel.data = data;
                 });
             };

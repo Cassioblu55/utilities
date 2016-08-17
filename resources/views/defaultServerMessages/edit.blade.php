@@ -1,7 +1,6 @@
 @extends('templates.form')
 
 @section('form_title', "$headers->createOrUpdate Default Server Message")
-@section('back_location', './')
 @section('controller','DefaultServerMessagesEditController')
 
 @section('required_scripts')
@@ -57,6 +56,8 @@
     <button type="button" ng-click="preview()" class="btn btn-default pull-right">Preview Message</button>
 @stop
 
+@section('back_location', ProjectRoute::makeRoute("defaultServerMessages/"))
+
 @section('scripts')
     <script type="text/javascript">
         app.controller("DefaultServerMessagesEditController", ['$scope', "$controller","$http", function($scope, $controller, $http) {
@@ -68,7 +69,9 @@
 
             $scope.httpCalls = $scope.httpCallsUtil('.');
 
-            $scope.httpCalls.getDataOnEdit("{{$defaultServerMessage->id}}", "data", function(data){
+            const OBJECT_DATA_URL = "{{ProjectRoute::makeRoute("defaultServerMessages/$defaultServerMessage->id/data")}}";
+
+            $scope.httpCalls.getDataOnEdit("{{$defaultServerMessage->id}}", OBJECT_DATA_URL, function(data){
                 data.fade_in = (data.fade_in == 1);
                 data.fade_out = (data.fade_out == 1);
                 $scope.defaultServerMessage = data;
