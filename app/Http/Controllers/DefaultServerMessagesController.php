@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\DefaultServerMessage;
 use Illuminate\Http\Request;
 use ProjectRoute;
-use RoutingUtilities;
 
 class DefaultServerMessagesController extends Controller
 {
@@ -36,7 +35,7 @@ class DefaultServerMessagesController extends Controller
 		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
 		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
 		DefaultServerMessage::create($request->all());
-		$message = RoutingUtilities::fixUrlParam("Record Added Successfully");
+		$message = "Record Added Successfully";
 		return redirect()->action("DefaultServerMessagesController@index", ["successMessage" => $message]);
 	}
 
@@ -44,7 +43,7 @@ class DefaultServerMessagesController extends Controller
 		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
 		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
 		$defaultServerMessage -> update($request->all());
-		$message = RoutingUtilities::fixUrlParam("Record Updated Successfully");
+		$message = "Record Updated Successfully";
 		return redirect()->action("DefaultServerMessagesController@index", ["successMessage" => $message]);
 	}
 
