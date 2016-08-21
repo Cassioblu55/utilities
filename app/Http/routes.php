@@ -38,3 +38,8 @@ Route::get('oneTimePad', function(){
 	return view('oneTimePad');
 
 });
+
+Route::get('onetimepad', function(){
+	return view('oneTimePad');
+
+});
