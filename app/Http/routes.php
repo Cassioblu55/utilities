@@ -32,3 +32,9 @@ Route::get('defaultServerMessages/css', 'DefaultServerMessagesController@listCss
 Route::auth();
 
 Route::get('/home', 'WelcomeController@index');
+
+
+Route::get('oneTimePad', function(){
+	return view('oneTimePad');
+
+});

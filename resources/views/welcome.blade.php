@@ -24,6 +24,8 @@
                     <a href="{{ProjectRoute::makeRoute("defaultServerMessages")}}">Default Messages admin controls</a>
                 </div>
 
+                <a href="{{ProjectRoute::makeRoute("oneTimePad")}}">One Time Pad Generator</a>
+
             </main>
         </div>
     </div>
