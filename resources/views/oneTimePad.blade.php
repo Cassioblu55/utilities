@@ -66,9 +66,6 @@
 
             angular.extend(this, $controller('UtilsController', {$scope: $scope}));
 
-            $scope.textToEncrypt = "test";
-            $scope.textUsedToEncrypt = "test";
-
             $scope.encrypt = function(){
                 if($scope.textCanBeEncrptyed()){
                     var finalText = [];
