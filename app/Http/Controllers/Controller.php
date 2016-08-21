@@ -20,4 +20,8 @@ class Controller extends BaseController
 		return (object) ["createOrUpdate" => "Update", "postLocation" => $postLocation, "methodField" => "PATCH", "addOrSave" => "Save"];
 	}
 
+	protected function getPostHeaders($postLocation){
+		return (object) ["postLocation" => $postLocation, "methodField" => "POST"];
+	}
+
 }

@@ -4,7 +4,7 @@
 Class ProjectRoute{
 
 	public static function getProjectBase(){
-		return env('project_base');
+		return env('project_base')."/";
 	}
 
 	public static function makeRoute($url){

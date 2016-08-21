@@ -10,6 +10,13 @@ class DefaultServerMessagesController extends Controller
 {
 	const CONTROLLER_NAMESPACE = "defaultServerMessages";
 
+	public function __construct()
+	{
+		$this->middleware('auth', ['except' => [
+			'data', 'findById'
+		]]);
+	}
+
     public function index(){
     	return view(self::CONTROLLER_NAMESPACE.".index");
     }
