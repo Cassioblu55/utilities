@@ -1,3 +1,70 @@
+function displayMessageFromUrlPrams(urlParamsToCreateMessages, replaceDefaultMessages, lifeSpanInMills){
+
+	const DEFUALT_SERVER_MESSAGES_DATA_URL = "http://cassiohudson.com/utilities/defaultServerMessages/data";
+	const DEFAULT_CSS_PATH = DEFUALT_SERVER_MESSAGES_DATA_URL+"findCSSByUrlParam?name=defaultMessage";
+
+	addDefaultUrlParamsToCreateMessages();
+	getDefualtCSSForMessagesWithoutCSS();
+	addMessageBoxStylesToHeader();
+	displayMessagesUrlParamPresent();
+
+
+	function addDefaultUrlParamsToCreateMessages() {
+		if(!replaceDefaultMessages){
+			urlParamsToCreateMessages = (!urlParamsToCreateMessages) ? [] : urlParamsToCreateMessages;
+
+			var getJSON = function(url) {
+				return new Promise(function(resolve, reject) {
+					var xhr = new XMLHttpRequest();
+					xhr.open('get', url, true);
+					xhr.responseType = 'json';
+					xhr.onload = function() {
+						var status = xhr.status;
+						if (status == 200) {
+							resolve(xhr.response);
+						} else {
+							reject(status);
+						}
+					};
+					xhr.send();
+				});
+			};
+
+			getJSON('http://www.cassiohudson.com').then(function(data) {
+				alert('Your Json result is:  ' + data.result); //you can comment this, i used it to debug
+
+				result.innerText = data.result; //display the result in an HTML element
+			}, function(status) { //error detection....
+				alert('Something went wrong.');
+			});
+		}
+	}
+
+
+
+
+
+
+
+
+
+	function getDefualtCSSForMessagesWithoutCSS(){
+
+	}
+
+	function addMessageBoxStylesToHeader() {
+
+	}
+
+	function displayMessagesUrlParamPresent() {
+
+	}
+}
+
+
+
+
+
 var messageDisplay = function messageDisplay(lifeSpanInMills){
 	var that = {};
 	lifeSpanInMills = lifeSpanInMills || 7000;

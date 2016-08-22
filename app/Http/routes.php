@@ -25,8 +25,7 @@ Route::get('defaultServerMessages/{defaultServerMessage}/clone', 'DefaultServerM
 Route::patch('defaultServerMessages/{defaultServerMessage}/update', 'DefaultServerMessagesController@update');
 Route::delete('defaultServerMessages/{defaultServerMessage}/delete', 'DefaultServerMessagesController@delete');
 
-Route::get('defaultServerMessages/{defaultServerMessage}/css', 'DefaultServerMessagesController@css');
-Route::get('defaultServerMessages/css', 'DefaultServerMessagesController@listCss');
+Route::get('defaultServerMessages/data/findCSSByUrlParam', 'DefaultServerMessagesController@findCSSByUrlParam');
 
 
 Route::auth();

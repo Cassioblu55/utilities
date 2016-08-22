@@ -132,7 +132,7 @@
                     $scope.finalText = "Text Cannot be Decrypted";
                 }
 
-            }
+            };
 
             function getArrayOfNumbers(textToConvert){
                 if(textToConvert){

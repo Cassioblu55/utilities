@@ -27,7 +27,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
                         <li><a href="{{ ProjectRoute::makeRoute('login') }}">Login</a></li>
-                        <li><a href="{{ ProjectRoute::makeRoute('register') }}">Register</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

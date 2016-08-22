@@ -1,7 +1,7 @@
 @extends('templates.app')
 
 @section('required_scripts')
-    <script type="text/javascript" src="{{ URL::asset('js/showServerMessages/ssm_2_0_0.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/showServerMessages/ssm_3_0_0.js') }}"></script>
 @stop
 
 @section('content')
@@ -49,6 +49,6 @@
 
 @section('scripts')
     <script>
-        showServerMessage();
+        displayMessageFromUrlPrams();
     </script>
 @stop

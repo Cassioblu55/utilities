@@ -5,15 +5,21 @@ namespace App\Http\Controllers;
 use App\DefaultServerMessage;
 use Illuminate\Http\Request;
 use ProjectRoute;
+use DB;
 
 class DefaultServerMessagesController extends Controller
 {
 	const CONTROLLER_NAMESPACE = "defaultServerMessages";
+	const DATABASE_NAME = 'default_server_messages';
 
 	public function __construct()
 	{
 		$this->middleware('auth', ['except' => [
-			'data', 'findById'
+			'data', 'findById', 'findCSSByUrlParam'
+		]]);
+
+		$this->middleware('cors', ['only' => [
+			'data', 'findById', 'findCSSByUrlParam'
 		]]);
 	}
 
@@ -64,6 +70,13 @@ class DefaultServerMessagesController extends Controller
 
 	public function findById(DefaultServerMessage $defaultServerMessage){
 		return $defaultServerMessage;
+	}
+
+	public function findCSSByUrlParam(Request $request){
+		$urlParam = $request->name;
+		$defaultServerMessage = DB::table(self::DATABASE_NAME)
+			->where('url_param', $urlParam)->first(['css_class_name','css']);
+		return json_encode($defaultServerMessage);
 	}
 
 	public function cloneObject(DefaultServerMessage $defaultServerMessage){
