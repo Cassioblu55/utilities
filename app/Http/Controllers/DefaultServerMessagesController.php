@@ -5,12 +5,10 @@ namespace App\Http\Controllers;
 use App\DefaultServerMessage;
 use Illuminate\Http\Request;
 use ProjectRoute;
-use DB;
 
 class DefaultServerMessagesController extends Controller
 {
 	const CONTROLLER_NAMESPACE = "defaultServerMessages";
-	const DATABASE_NAME = 'default_server_messages';
 
 	public function __construct()
 	{
@@ -65,18 +63,19 @@ class DefaultServerMessagesController extends Controller
 	}
 
 	public function data(){
-		return DefaultServerMessage::all();
+		$defaultServerMessages = DefaultServerMessage::all();
+		return response()->json($defaultServerMessages, 200, headers_list());
 	}
 
 	public function findById(DefaultServerMessage $defaultServerMessage){
-		return $defaultServerMessage;
+		return response()->json($defaultServerMessage, 200, headers_list());
 	}
 
 	public function findCSSByUrlParam(Request $request){
 		$urlParam = $request->name;
-		$defaultServerMessage = DB::table(self::DATABASE_NAME)
+		$defaultServerMessage = DefaultServerMessage::query()
 			->where('url_param', $urlParam)->first(['css_class_name','css']);
-		return json_encode($defaultServerMessage);
+		return response()->json($defaultServerMessage, 200, headers_list());
 	}
 
 	public function cloneObject(DefaultServerMessage $defaultServerMessage){
