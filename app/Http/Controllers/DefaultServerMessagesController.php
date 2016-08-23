@@ -9,6 +9,7 @@ use ProjectRoute;
 class DefaultServerMessagesController extends Controller
 {
 	const CONTROLLER_NAMESPACE = "defaultServerMessages";
+	const DATABASE_TABLE_NAME = "default_server_messages";
 
 	public function __construct()
 	{
@@ -43,6 +44,13 @@ class DefaultServerMessagesController extends Controller
 	}
 
 	public function add(Request $request){
+		$this->validate($request, [
+			'url_param' => 'required|unique:'.self::DATABASE_TABLE_NAME,
+			'message_box_name' => 'unique:'.self::DATABASE_TABLE_NAME.",message_box_name",
+			'css_class_name' => 'required_with:css|unique:'.self::DATABASE_TABLE_NAME.",css_class_name",
+			'css' =>'required_with:css_class_name'
+		]);
+
 		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
 		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
 		DefaultServerMessage::create($request->all());
@@ -51,6 +59,13 @@ class DefaultServerMessagesController extends Controller
 	}
 
 	public function update(Request $request, DefaultServerMessage $defaultServerMessage){
+		$this->validate($request, [
+			'url_param' => 'required|unique:'.self::DATABASE_TABLE_NAME. ',id,'.$defaultServerMessage->id,
+			'message_box_name' => 'unique:'.self::DATABASE_TABLE_NAME.',message_box_name,'.$defaultServerMessage->id,
+			'css_class_name' => 'required_with:css|unique:'.self::DATABASE_TABLE_NAME.',css_class_name,'.$defaultServerMessage->id,
+			'css' =>'required_with:css_class_name'
+		]);
+
 		$request['fade_out'] = ($request->has('fade_out')) ? true : false;
 		$request['fade_in'] = ($request->has('fade_in')) ? true : false;
 		$defaultServerMessage -> update($request->all());

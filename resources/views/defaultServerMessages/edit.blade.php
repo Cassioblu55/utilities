@@ -8,24 +8,49 @@
 @stop
 
 @section('form_body')
+
     <div class="form-group">
         <label for="url_param">Edit Url Param</label>
-        <input type="text" class="form-control" ng-value="defaultServerMessage.url_param" name="url_param" id="url_param" placeholder="Url Param" />
+        <input type="text" class="form-control" required ng-value="defaultServerMessage.url_param" name="url_param" id="url_param" placeholder="Url Param" />
+
+        @if ($errors->has('url_param'))
+            <span class="text-danger">
+                <strong>{{ $errors->first('url_param') }}</strong>
+            </span>
+        @endif
     </div>
 
     <div class="form-group">
         <label for="css_class_name">Css Class Name</label>
         <input type="text" class="form-control" ng-model="defaultServerMessage.css_class_name" name="css_class_name" id="css_class_name" placeholder="Css Class Name" />
+
+        @if ($errors->has('css_class_name'))
+            <span class="text-danger">
+                <strong>{{ $errors->first('css_class_name') }}</strong>
+            </span>
+        @endif
     </div>
 
     <div class="form-group">
         <label for="css">Css</label>
         <textarea type="text" id="css" class="form-control" ng-model="defaultServerMessage.css" name="css" placeholder="<% cssPlaceHolder %>" rows="10" ></textarea>
+
+        @if ($errors->has('css'))
+            <span class="text-danger">
+                <strong>{{ $errors->first('css') }}</strong>
+            </span>
+        @endif
     </div>
 
     <div class="form-group">
         <label for="message_box_name">Message Box Name</label>
         <input type="text"  class="form-control" ng-model="defaultServerMessage.message_box_name" name="message_box_name" id="massage_box_name" placeholder="Message Box Name"/>
+
+        @if ($errors->has('message_box_name'))
+            <span class="text-danger">
+                <strong>{{ $errors->first('message_box_name') }}</strong>
+            </span>
+        @endif
     </div>
 
     <div class="row">
@@ -33,11 +58,22 @@
             <div class="checkbox">
                 <label id="fade_in"><input name="fade_in" type="checkbox" ng-model="defaultServerMessage.fade_in">Fade In</label>
             </div>
+            @if ($errors->has('fade_in'))
+                <span class="text-danger">
+                    <strong>{{ $errors->first('fade_in') }}</strong>
+                </span>
+            @endif
+
         </div>
         <div class="col-md-6">
             <div class="checkbox">
                 <label id="fade_out"><input name="fade_out" type="checkbox" ng-model="defaultServerMessage.fade_out">Fade Out</label>
             </div>
+            @if ($errors->has('fade_out'))
+                <span class="text-danger">
+                    <strong>{{ $errors->first('fade_out') }}</strong>
+                </span>
+            @endif
         </div>
 
     </div>
@@ -77,7 +113,7 @@
                 $scope.defaultServerMessage = data;
             });
 
-            var messagePreview = new messageDisplay();
+            var messagePreview = new MessageDisplay();
 
             $scope.preview = function(){
                 messagePreview.setMessageDisplayData($scope.defaultServerMessage);

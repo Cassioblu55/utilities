@@ -9,8 +9,10 @@
         <h1>Create Popup Error Message</h1>
         <h2>Easily create messages on any page</h2>
 
-
         <h3>Defualt Messages</h3>
+    </header>
+
+    <main role="main">
         <p>Include file and add "errorMessage=Message" to url param and display a popup message that will fade away. Alerting a user of error. For example incorrectly submiting a form with an error that only the server can find.</p>
 
         <p>Include file and add "successMessage=Message" to url param and display a popup message that will fade away. Alerting a user of a successful action. Like a database entry updating or deleting successfully.</p>
@@ -25,12 +27,6 @@
 
         <p>See how to create custom message triggers here: <a href="{{url('showMessages/alt?customMessage=This is a new message type with its own CSS')}}">Show custom messages</a>
         </p>
-
-
-    </header>
-
-
-    <main role="main">
 
         <a href="{{url('showMessages?errorMessage=This is a error message.')}}">Show error message</a>
         <br>

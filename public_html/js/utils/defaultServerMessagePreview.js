@@ -1,4 +1,4 @@
-var messageDisplay = function messageDisplay(lifeSpanInMills){
+var MessageDisplay = function(lifeSpanInMills){
 	var that = {};
 	lifeSpanInMills = lifeSpanInMills || 7000;
 	var messageDisplayData;

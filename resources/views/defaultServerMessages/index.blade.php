@@ -65,7 +65,7 @@
 
             $scope.previewMessage = "This is a preview Message";
 
-            var messagePreview = new messageDisplay();
+            var messagePreview = new MessageDisplay();
             $scope.preview = function(defaultServerMessage){
                 messagePreview.clean();
                 messagePreview.setMessageDisplayData(defaultServerMessage);
