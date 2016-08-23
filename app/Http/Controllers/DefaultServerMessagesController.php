@@ -46,8 +46,8 @@ class DefaultServerMessagesController extends Controller
 	public function add(Request $request){
 		$this->validate($request, [
 			'url_param' => 'required|unique:'.self::DATABASE_TABLE_NAME,
-			'message_box_name' => 'unique:'.self::DATABASE_TABLE_NAME.",message_box_name",
-			'css_class_name' => 'required_with:css|unique:'.self::DATABASE_TABLE_NAME.",css_class_name",
+			'message_box_name' => 'unique:'.self::DATABASE_TABLE_NAME,
+			'css_class_name' => 'required_with:css|unique:'.self::DATABASE_TABLE_NAME,
 			'css' =>'required_with:css_class_name'
 		]);
 
@@ -60,7 +60,7 @@ class DefaultServerMessagesController extends Controller
 
 	public function update(Request $request, DefaultServerMessage $defaultServerMessage){
 		$this->validate($request, [
-			'url_param' => 'required|unique:'.self::DATABASE_TABLE_NAME. ',id,'.$defaultServerMessage->id,
+			'url_param' => 'required|unique:'.self::DATABASE_TABLE_NAME. ',url_param,'.$defaultServerMessage->id,
 			'message_box_name' => 'unique:'.self::DATABASE_TABLE_NAME.',message_box_name,'.$defaultServerMessage->id,
 			'css_class_name' => 'required_with:css|unique:'.self::DATABASE_TABLE_NAME.',css_class_name,'.$defaultServerMessage->id,
 			'css' =>'required_with:css_class_name'
