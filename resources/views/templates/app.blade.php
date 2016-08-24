@@ -19,18 +19,19 @@
 
     </head>
 
-    <header>
-        @yield('menu')
-    </header>
+    <div class="container-fluid">
+        <header>
+            @yield('menu')
+        </header>
 
+        <body>
+            @yield('content')
+        </body>
 
-    <body>
-        @yield('content')
-    </body>
-
-    <footer>
-        @yield('footer')
-    </footer>
+        <footer>
+            @yield('footer')
+        </footer>
+    </div>
 
     @yield('scripts')
 

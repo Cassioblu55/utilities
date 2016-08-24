@@ -64,8 +64,10 @@ function displayMessageFromUrlPrams(urlParamsToCreateMessages, replaceDefaultMes
 	}
 
 	function getUrlParam(param){
-		var p = location.search.split(param+"=")[1]
-		return (p) ? decodeURI(p.split("&")[0]) : null;
+		var p = location.search.split(param+"=")[1];
+		var message = (p) ? p.split("&")[0] : null;
+		var fixedMessage = (message) ? message.split("+").join("%20") : null;
+		return (fixedMessage) ? decodeURI(fixedMessage) : null;
 	}
 
 	function getDivMargin(){

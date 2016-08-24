@@ -22,8 +22,8 @@
         <h3>Use</h3>
         <p>Reference Code At:  {projectHome}/js/showServerMessages/ssm_{versionNumber}.js</p>
         <p>Call function:</p>
-        <pre>showServerMessage(arrayOfMessageTriggers, overrideDefaultMessages);</pre>
-        <p>arrayOfMessageTriggers is optional</p>
+        <pre>displayMessageFromUrlPrams([urlPramsToRespondTo], doNotUseDefaultMessagesBoolean, lifeSpanInMillis);</pre>
+        <p>All parameters are optional, sending in none all defaults will be used</p>
 
         <p>See how to create custom message triggers here: <a href="{{url('showMessages/alt?customMessage=This is a new message type with its own CSS')}}">Show custom messages</a>
         </p>
