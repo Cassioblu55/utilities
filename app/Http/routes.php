@@ -2,6 +2,10 @@
 
 Route::get('/', 'WelcomeController@index');
 
+Route::get('utilTest', function(){
+	return  view("utilsTest");
+});
+
 Route::get("showMessages", 'ShowMessagesController@index');
 
 Route::get('showMessages/alt', 'ShowMessagesController@alt');
